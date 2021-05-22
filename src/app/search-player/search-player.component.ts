@@ -18,7 +18,7 @@ export class SearchPlayerComponent implements OnInit {
 
   ngOnInit(): void {}
 
-  searchPlayer() {
+  searchPlayer(): void {
     this.service.getPlayersByName(this.name).subscribe((res) => {
       this.players = res;
     });
