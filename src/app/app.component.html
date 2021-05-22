@@ -1,1 +1,31 @@
-<h1>Working???</h1>
+<div class="jumbotron">
+  <h1 class="display-4">Player Spring Boot App</h1>
+  <p class="lead">Integration of Spring Boot with Angular</p>
+  <hr class="my-4" />
+</div>
+
+<div class="container">
+  <ul class="nav justify-content-center">
+    <li class="nav-item">
+      <a routerLink="/addPlayer" class="nav-link">Add Player</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/deletePlayer" class="nav-link">Delete Player</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/searchPlayer" class="nav-link">Search Player</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/updatePlayer" class="nav-link">Update Player</a>
+    </li>
+    <li class="nav-item">
+      <a routerLink="/playerList" class="nav-link">Players List</a>
+    </li>
+  </ul>
+</div>
+
+<br />
+<br />
+<div class="container">
+  <router-outlet></router-outlet>
+</div>

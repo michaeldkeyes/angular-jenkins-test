@@ -1,0 +1,31 @@
+<div class="container">
+  <h3>Find a player</h3>
+  <input
+    class="form-control"
+    type="text"
+    [(ngModel)]="name"
+    placeholder="Enter Player Name"
+  />
+  <button (click)="searchPlayer()">Search Player</button>
+
+  <table class="table table-light table-bordered table-hover">
+    <thead class="thead-light">
+      <tr>
+        <th>Id</th>
+        <th>Name</th>
+        <th>Age</th>
+        <th>City</th>
+        <th>Team</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let player of players">
+        <td>{{ player.id }}</td>
+        <td>{{ player.name }}</td>
+        <td>{{ player.age }}</td>
+        <td>{{ player.city }}</td>
+        <td>{{ player.team }}</td>
+      </tr>
+    </tbody>
+  </table>
+</div>

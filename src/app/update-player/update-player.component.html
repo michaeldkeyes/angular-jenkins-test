@@ -1,0 +1,34 @@
+<div class="container">
+  <h3>Enter Player Details</h3>
+  <input
+    type="text"
+    class="form-control"
+    [(ngModel)]="player.id"
+    placeholder="Enter Player id"
+  />
+  <input
+    class="form-control"
+    type="text"
+    [(ngModel)]="player.name"
+    placeholder="Enter Player Name"
+  />
+  <input
+    class="form-control"
+    type="text"
+    [(ngModel)]="player.age"
+    placeholder="Enter Player age"
+  />
+  <input
+    class="form-control"
+    type="text"
+    [(ngModel)]="player.city"
+    placeholder="Enter Player city"
+  />
+  <input
+    class="form-control"
+    type="text"
+    [(ngModel)]="player.team"
+    placeholder="Enter Player team"
+  />
+  <button (click)="updatePlayer()">Update Player</button>
+</div>
